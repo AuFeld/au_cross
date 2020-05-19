@@ -23,8 +23,10 @@ cerebro = bt.Cerebro()
 cerebro.broker.setcash(100000)
 
 spy_prices = pd.read_csv('data/SPY.csv', index_col="Date", parse_dates=True)
+msft_prices = pd.read_csv('data/MSFT.csv', index_col="Date", parse_dates=True)
+apd_prices = pd.read_csv('data/APD.csv', index_col="Date", parse_dates=True)
 
-feed = bt.feeds.PandasData(dataname=spy_prices)
+feed = bt.feeds.PandasData(dataname=msft_prices)
 cerebro.adddata(feed)
 
 cerebro.addstrategy(strategies[args.strategy])

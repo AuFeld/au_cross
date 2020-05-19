@@ -6,7 +6,7 @@ class AU_Cross(bt.Strategy):
     params = (('fast', 50), 
               ('slow', 200), 
               ('order_percentage', 0.95), 
-              ('ticker', 'SPY'))
+              ('ticker', 'APD'))
 
     def __init__(self):
         self.fast_moving_avg = bt.indicators.SMA(

@@ -1,7 +1,7 @@
 # AU_Cross
 Golden Cross Strategy vs Buy & Hold
 
-To run the two different strategies for SPY:
+To run the two different strategies for MSFT:
 in terminal = python3 run.py {}
 
  if {}:

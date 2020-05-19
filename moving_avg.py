@@ -1,6 +1,6 @@
 closing_price_sum = 0
 
-with open('data/spy.csv') as f:
+with open('data/APD.csv') as f:
     content = f.readlines()[-50:]
     for line in content:
         print(line)
